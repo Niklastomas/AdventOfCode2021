@@ -2,13 +2,8 @@
 
 var numbersData = File.ReadAllText("data.txt").Split(",");
 var numbers = numbersData.Select(n => Int32.Parse(n));
-
-
 var boardsData = File.ReadAllLines("boards.txt");
 
-
-
-// First solution
 List<Board> boards = new();
 
 var count = 0;
